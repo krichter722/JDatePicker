@@ -39,6 +39,7 @@ import java.util.Calendar;
  */
 public class WeekendConstraint extends WeekdayConstraint {
 
+    @Override
     public boolean isValidSelection(DateModel<?> model) {
         if (model.isSelected()) {
             Calendar value = Calendar.getInstance();
