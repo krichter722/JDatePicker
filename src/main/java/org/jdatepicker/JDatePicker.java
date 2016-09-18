@@ -366,4 +366,13 @@ public abstract class JDatePicker<T> extends JComponent implements DatePicker {
 
     }
 
+    @Override
+    public int getBaseline(int width, int height) {
+        return formattedTextField.getBaseline(width, height);
+    }
+
+    @Override
+    public BaselineResizeBehavior getBaselineResizeBehavior() {
+        return formattedTextField.getBaselineResizeBehavior();
+    }
 }
