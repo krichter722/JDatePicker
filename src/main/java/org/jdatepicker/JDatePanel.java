@@ -679,6 +679,7 @@ public abstract class JDatePanel<T> extends JComponent implements DatePanel {
 
         private static final long serialVersionUID = -2341614459632756921L;
 
+        @Override
         public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
             // Exit this method if the value is null, encountered from JTable#AccessibleJTable
             if (value == null) {
